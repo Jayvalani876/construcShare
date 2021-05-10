@@ -10,15 +10,17 @@ const Stack = createStackNavigator();
 
 export const PreLoginStackNavigator = () => {
     return (
-        <Stack.Navigator initialRouteName="login">
+        <Stack.Navigator initialRouteName="signup">
           <Stack.Screen
             name="login"
             component={LoginScreen}
             options={{headerShown: false}}
           />
           <Stack.Screen 
-          name="signup" 
-          component={SignupScreen} />
+            name="signup" 
+            component={SignupScreen} 
+            options={{headerShown: false}}
+            />
         </Stack.Navigator>
     );
   };
@@ -29,6 +31,7 @@ export const PreLoginStackNavigator = () => {
           <Stack.Screen
             name="login"
             component={LoginScreen}
+            options={{headerShown: false}}
           />
           <Stack.Screen 
           name="signup" 

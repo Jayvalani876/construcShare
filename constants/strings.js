@@ -15,7 +15,9 @@ const strings = {
       invalidCnfPassword: 'Confirm password doesn\'t match password',
       emptyCnfPassword: 'Confirm password can not be empty',
       emptyEmail: "Ëmail can not be empty",
-      invalidEmail: "Invalid email formate"
+      invalidEmail: "Invalid email formate",
+      emailPlaceholder: 'abc.rentry@xyzpteltd.com.sg',
+      passwordPlaceholder: '**********'
     },
     logIn: {
         welcomeBack: 'Welcome Back!',

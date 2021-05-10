@@ -53,22 +53,24 @@ export default StyleSheet.create({
         marginTop: 11,
     },
     imgstyle: {
-        marginHorizontal: 10,
-        margin: 5,
-        // height: 10,
-        // width: 13,
-        resizeMode : 'stretch',
-        alignItems: 'center',
-        marginLeft:15
-    },
-    imgstyle: {
         marginHorizontal: 13,
         margin: 5,
-        // height: 10,
-        // width: 13,
+        height: 25,
+        width: 24,
         resizeMode : 'stretch',
         alignItems: 'center',
-        marginLeft:15
+        marginLeft:13,
+        marginTop: 7
+    },
+    imagestyle: {
+        marginHorizontal: 13,
+        margin: 5,
+        height: 25,
+        width: 20,
+        resizeMode : 'stretch',
+        alignItems: 'center',
+        marginLeft:13,
+        marginTop: 6
     },
     txtimput: {
         fontFamily: R.fonts.sofiaMedium,

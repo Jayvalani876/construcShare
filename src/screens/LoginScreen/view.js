@@ -10,8 +10,8 @@ return (<View style = {styles.rootView}>
     <View style={styles.containerView}>
         <Image source={R.images.img_logo_large} style = {styles.logo}/>
         <Text style={styles.welcome}>{R.strings.logIn.welcomeBack}</Text>
+
         <Text style={styles.email}>{R.strings.logIn.email}</Text>
-        
         <View style={styles.selectionstyle}>
         <Image source={R.images.ic_mail} style = {styles.imgstyle}/>
         <TextInput 
@@ -30,12 +30,6 @@ return (<View style = {styles.rootView}>
             style={styles.txtimput}
         />
         </View>
-        {/* <TextInput 
-            placeholder={R.strings.logIn.passwordPlaceholder}
-            placeholderTextColor= {R.colors.black}
-            style={styles.txtimput}
-            source={R.images.ic_mail}
-        /> */}
         <Text style={styles.forgetpass}>{R.strings.logIn.forgetPassword}</Text>
         <View style={styles.button}>
         <Button 
