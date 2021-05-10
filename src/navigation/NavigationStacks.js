@@ -14,6 +14,7 @@ export const PreLoginStackNavigator = () => {
           <Stack.Screen
             name="login"
             component={LoginScreen}
+            options={{headerShown: false}}
           />
           <Stack.Screen 
           name="signup" 

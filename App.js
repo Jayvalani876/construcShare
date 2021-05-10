@@ -9,6 +9,7 @@ export default function App() {
     sofia: require('./assets/fonts/SofiaProRegular.ttf'),
     sofiaBold: require('./assets/fonts/SofiaProBold.ttf'),
     sofiaLight: require('./assets/fonts/SofiaProLight.ttf'),
+    sofiaMedium: require('./assets/fonts/SofiaProMedium.otf'),
   });
 
   if (!loaded) {

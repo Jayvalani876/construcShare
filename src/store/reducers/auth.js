@@ -1,7 +1,7 @@
 import { SIGN_IN, SIGN_OUT } from 'src/store/actionTypes';
 
 const initialState = {
-    isAuth: false
+    isAuth: false,
 };
 
 export default (state = initialState, action) => {
