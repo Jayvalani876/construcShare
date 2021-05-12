@@ -5,7 +5,7 @@ import styles from './styles';
 
 import R from 'constants/R';
 
-const LoginScreen = () => {
+const LoginScreen = (props) => {
 return (<View style = {styles.rootView}>
     <View style={styles.containerView}>
         <Image source={R.images.img_logo_large} style = {styles.logo}/>
@@ -30,7 +30,12 @@ return (<View style = {styles.rootView}>
             style={styles.txtimput}
         />
         </View>
-        <Text style={styles.forgetpass}>{R.strings.logIn.forgetPassword}</Text>
+        <Text 
+            style={styles.forgetpass}
+            onPress={() => props.navigation.navigate('forgetpass')}    
+            >
+                {R.strings.logIn.forgetPassword}
+        </Text>
         <View style={styles.button}>
         <Button 
             title={R.strings.logIn.logIn}

@@ -43,6 +43,16 @@ const strings = {
         two: '2',
         three: '3'
     },
+    forgetpass: {
+      forget: 'Forget Password?',
+      enterEmail: '  Enter Your Registered E-Mail & We’ll send you the link to the reset password',
+      email: 'Email',
+      emailPlaceholder: 'abc.rentry@xyzpteltd.com.sg',
+      signUpHere: 'Sign Up Here',
+      noAccount: 'No account?',
+      needHelp: 'Need Help?',
+      submit: 'Submit'
+    },
   };
   
   export default strings;

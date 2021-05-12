@@ -7,7 +7,7 @@ const images = {
     ic_help: require('../assets/img/ic_help.png'), 
     img_video: require('../assets/img/img_video.png'),  
     img_sitting: require('../assets/img/img_sitting.png'),  
-    // ic_help: require('../assets/img/ic_help.png'),  
+    img_forget_password: require('../assets/img/img_forget_password.png'),  
 
     
   }
