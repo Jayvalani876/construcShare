@@ -4,6 +4,8 @@ import {NavigationContainer} from '@react-navigation/native';
 
 import LoginScreen from 'src/screens/LoginScreen';
 import SignupScreen from 'src/screens/SignupScreen';
+import WorkingScreen from 'src/screens/WorkingScreen';
+
 
 const Stack = createStackNavigator();
 
@@ -19,6 +21,11 @@ export const PreLoginStackNavigator = () => {
           <Stack.Screen 
             name="signup" 
             component={SignupScreen} 
+            options={{headerShown: false}}
+            />
+            <Stack.Screen 
+            name="work" 
+            component={WorkingScreen} 
             options={{headerShown: false}}
             />
         </Stack.Navigator>

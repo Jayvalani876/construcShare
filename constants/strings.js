@@ -30,7 +30,19 @@ const strings = {
         needHelp: 'Need Help?',
         emailPlaceholder: 'abc.rentry@xyzpteltd.com.sg',
         passwordPlaceholder: '**********'
-    }
+    },
+    work:{
+        howItWorks: 'How it works?',
+        getStarted: '3 Simple Steps to Get Started!',
+        signUp: 'Sign Up',
+        learnMore: 'Learn More',
+        para: 'Whether you are buying or selling,renting or \n  leasing ,you can manage all your activities. \n \t \t \t \t \t \t CONVENIENTLY & EFFECTIVELY',
+        findService: 'Buy/Find Services',
+        finishOff: 'Finish Off',
+        one: '1',
+        two: '2',
+        three: '3'
+    },
   };
   
   export default strings;

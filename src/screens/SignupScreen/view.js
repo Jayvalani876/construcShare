@@ -1,5 +1,5 @@
 import React from 'react';
-import {View, Text, Image, TextInput, Button} from 'react-native';
+import {View, Text, Image, TextInput, Button, ProgressBarAndroidComponent} from 'react-native';
 
 import styles from './styles';
 
@@ -58,6 +58,7 @@ return (
         <Button 
             title={R.strings.signUp.works}
             color={R.colors.black}
+            onPress={() => props.navigation.navigate('work')}
         />
         </View>
     </View>
