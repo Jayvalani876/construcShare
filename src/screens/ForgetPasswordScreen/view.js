@@ -35,7 +35,12 @@ return (
             <Text style={styles.signup}>{R.strings.logIn.signUpHere}</Text>
         </View>
         <Image source={R.images.ic_help} style = {styles.help}/>
-        <Text style={styles.needhelp}>{R.strings.logIn.needHelp}</Text>
+        <Text 
+            style={styles.needhelp}
+            onPress={() => props.navigation.navigate('resetpass')}
+            >
+                {R.strings.logIn.needHelp}
+        </Text>
        
     </View>
 </View>

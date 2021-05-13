@@ -6,6 +6,9 @@ import LoginScreen from 'src/screens/LoginScreen';
 import SignupScreen from 'src/screens/SignupScreen';
 import WorkingScreen from 'src/screens/WorkingScreen';
 import ForgetPasswordScreen from 'src/screens/ForgetPasswordScreen';
+import ResetPasswordScreen from 'src/screens/ResetPasswordScreen';
+import SuccessScreen from 'src/screens/SuccessScreen';
+
 
 
 const Stack = createStackNavigator();
@@ -32,6 +35,16 @@ export const PreLoginStackNavigator = () => {
             <Stack.Screen 
             name="forgetpass" 
             component={ForgetPasswordScreen} 
+            options={{headerShown: false}}
+            />
+            <Stack.Screen 
+            name="resetpass" 
+            component={ResetPasswordScreen} 
+            options={{headerShown: false}}
+            />
+            <Stack.Screen 
+            name="success" 
+            component={SuccessScreen} 
             options={{headerShown: false}}
             />
         </Stack.Navigator>

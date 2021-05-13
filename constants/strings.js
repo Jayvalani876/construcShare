@@ -53,6 +53,29 @@ const strings = {
       needHelp: 'Need Help?',
       submit: 'Submit'
     },
+    resetpass:{
+      reset: 'Reset Password',
+      email: 'Email',  
+      password: 'Password',
+      reEnterPassword: 'Re-enter Password',    
+      emptyPassword: 'Password can not be empty',
+      invalidCnfPassword: 'Confirm password doesn\'t match password',
+      emptyCnfPassword: 'Confirm password can not be empty',
+      emptyEmail: "Ëmail can not be empty",
+      invalidEmail: "Invalid email formate",
+      emailPlaceholder: 'abc.rentry@xyzpteltd.com.sg',
+      passwordPlaceholder: '**********',
+      submit: 'Submit',
+      cancle: 'Cancel',
+      needHelp: 'Need Help?',
+    },
+    success:{
+      success: 'SUCCESS!',
+      welcomeBack: 'Welcome Back!',
+      email: 'abc.rentry@xyzpteltd.com.sg',
+      continue: 'Press continue to gain access to your account!',
+      continue: 'Continue'
+    },
   };
   
   export default strings;

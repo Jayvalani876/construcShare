@@ -45,6 +45,7 @@ return (
         <Button 
             title={R.strings.signUp.signUp}
             color={R.colors.red}
+            onPress={() => props.navigation.navigate('verification')}
         />
         </View>
        

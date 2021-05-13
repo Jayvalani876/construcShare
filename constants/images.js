@@ -8,6 +8,8 @@ const images = {
     img_video: require('../assets/img/img_video.png'),  
     img_sitting: require('../assets/img/img_sitting.png'),  
     img_forget_password: require('../assets/img/img_forget_password.png'),  
+    img_success: require('../assets/img/img_success.png'),  
+
 
     
   }
