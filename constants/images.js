@@ -9,7 +9,7 @@ const images = {
     img_sitting: require('../assets/img/img_sitting.png'),  
     img_forget_password: require('../assets/img/img_forget_password.png'),  
     img_success: require('../assets/img/img_success.png'),  
-
+    img_girl: require('../assets/img/img_girl.png'),
 
     
   }

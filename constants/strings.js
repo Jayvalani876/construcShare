@@ -76,6 +76,15 @@ const strings = {
       continue: 'Press continue to gain access to your account!',
       continue: 'Continue'
     },
+    verification: {
+      verification: 'Verification',
+      hurry: 'Hurray!',
+      mailSent: 'We have sent an email to',
+      email: 'abc.rentry@xyzpteltd.com.sg',
+      clickMail:'Just click on the link in the emailto continue with the signup.',
+      findMail: 'Still can’t find the Email?',
+      resendMail: 'Resend Email'
+    },
   };
   
   export default strings;

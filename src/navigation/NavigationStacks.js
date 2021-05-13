@@ -8,8 +8,7 @@ import WorkingScreen from 'src/screens/WorkingScreen';
 import ForgetPasswordScreen from 'src/screens/ForgetPasswordScreen';
 import ResetPasswordScreen from 'src/screens/ResetPasswordScreen';
 import SuccessScreen from 'src/screens/SuccessScreen';
-
-
+import VerificationScreen from 'src/screens/VerificationScreen';
 
 const Stack = createStackNavigator();
 
@@ -45,6 +44,11 @@ export const PreLoginStackNavigator = () => {
             <Stack.Screen 
             name="success" 
             component={SuccessScreen} 
+            options={{headerShown: false}}
+            />
+            <Stack.Screen 
+            name="verification" 
+            component={VerificationScreen} 
             options={{headerShown: false}}
             />
         </Stack.Navigator>
