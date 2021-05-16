@@ -32,12 +32,12 @@ export const PreLoginStackNavigator = () => {
             options={{headerShown: false}}
             />
             <Stack.Screen 
-            name="forgetpass" 
+            name="forgetPass" 
             component={ForgetPasswordScreen} 
             options={{headerShown: false}}
             />
             <Stack.Screen 
-            name="resetpass" 
+            name="resetPass" 
             component={ResetPasswordScreen} 
             options={{headerShown: false}}
             />

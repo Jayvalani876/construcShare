@@ -11,11 +11,9 @@ export default StyleSheet.create({
     },
     containerView: {
         flex:1,
-        // marginHorizontal: 32,
         marginTop: 113,
     },
     logo: {
-        // marginTop: 52,
         alignSelf: 'center',
         width: 74,
         height: 74
@@ -28,56 +26,15 @@ export default StyleSheet.create({
         color: R.colors.black,
         marginTop: 29
     },
-    email: {
-        fontFamily: R.fonts.sofiaMedium,
-        fontSize: 14,
-        marginHorizontal: 32,
-        color: R.colors.grey,
-        marginTop: 38 
+    input: {
+        width: "93%",
+        alignSelf: "center",
+        height: 75
     },
     password: {
-        fontFamily: R.fonts.sofiaMedium,
-        fontSize: 14,
-        marginHorizontal: 32,
-        color: R.colors.grey,
         marginTop: 28 
     },
-    selectionstyle:{
-        flexDirection: 'row',
-        marginLeft: 32,
-        marginRight: 32,
-        borderColor: R.colors.grey,
-        borderWidth: 1,
-        height: 40,
-        borderRadius: 5 ,
-        marginTop: 11,
-    },
-    imgstyle: {
-        marginHorizontal: 13,
-        margin: 5,
-        height: 25,
-        width: 24,
-        resizeMode : 'stretch',
-        alignItems: 'center',
-        marginLeft:13,
-        marginTop: 7
-    },
-    imagestyle: {
-        marginHorizontal: 13,
-        margin: 5,
-        height: 25,
-        width: 20,
-        resizeMode : 'stretch',
-        alignItems: 'center',
-        marginLeft:13,
-        marginTop: 6
-    },
-    txtimput: {
-        fontFamily: R.fonts.sofiaMedium,
-        fontSize: 14,
-        textAlign: 'left',
-    },
-    forgetpass: {
+    forgetPass: {
         fontFamily: R.fonts.sofiaMedium,
         fontSize: 11,
         color: R.colors.black,
@@ -85,15 +42,14 @@ export default StyleSheet.create({
         textAlign: 'right',
         marginRight: 32,
     },
-    button: {
-        marginHorizontal: 29,
-        marginVertical: 20, 
+    but: {
+        marginTop: 29
     },
     rap: {
         flexDirection: 'row',
         alignSelf: 'center'
     },
-    noaccount: {
+    noAccount: {
         color: R.colors.grey,
         fontFamily: R.fonts.sofiaMedium,
         fontSize: 14,
@@ -110,7 +66,7 @@ export default StyleSheet.create({
         width: 58,
         height: 58
     },
-    needhelp: {
+    needHelp: {
         fontFamily: R.fonts.sofiaMedium,
         fontSize: 12,
         textAlign: "center",
