@@ -3,7 +3,8 @@ import {View, Text, Image, TextInput, Button ,TouchableOpacity} from 'react-nati
 
 ///components
 import Input from 'src/components/Input';
-import Press from 'src/components/Press'
+import Press from 'src/components/Press';
+import Help from 'src/components/Help';
 
 ///styles
 import styles from './styles';
@@ -54,22 +55,20 @@ return (
         <Press 
             title={R.strings.logIn.logIn}
             paint={R.colors.red}
-            style={styles.but}
+            style={[styles.butt, styles.but]}
         />
-
-        {/* <View style={styles.button}>
-        <Button 
-            title={R.strings.logIn.logIn}
-            color={R.colors.red}
-        />
-        </View> */}
 
         <View style={styles.rap}>
             <Text style={styles.noAccount}>{R.strings.logIn.noAccount}</Text>
             <Text style={styles.signup}>{R.strings.logIn.signUpHere}</Text>
         </View>
-        <Image source={R.images.ic_help} style = {styles.help}/>
-        <Text style={styles.needHelp}>{R.strings.logIn.needHelp}</Text>
+
+        <Help 
+            image ={R.images.ic_help}
+            label = {R.strings.logIn.needHelp}
+            style = {styles.need}
+        />
+
     </View>
 </View>
 );

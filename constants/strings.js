@@ -43,7 +43,7 @@ const strings = {
         two: '2',
         three: '3'
     },
-    forgetpass: {
+    forgetPass: {
       forget: 'Forget Password?',
       enterEmail: '  Enter Your Registered E-Mail & We’ll send you the link to the reset password',
       email: 'Email',
@@ -53,7 +53,7 @@ const strings = {
       needHelp: 'Need Help?',
       submit: 'Submit'
     },
-    resetpass:{
+    resetPass:{
       reset: 'Reset Password',
       email: 'Email',  
       password: 'Password',
@@ -66,7 +66,7 @@ const strings = {
       emailPlaceholder: 'abc.rentry@xyzpteltd.com.sg',
       passwordPlaceholder: '**********',
       submit: 'Submit',
-      cancle: 'Cancel',
+      cancel: 'Cancel',
       needHelp: 'Need Help?',
     },
     success:{
@@ -74,7 +74,8 @@ const strings = {
       welcomeBack: 'Welcome Back!',
       email: 'abc.rentry@xyzpteltd.com.sg',
       continue: 'Press continue to gain access to your account!',
-      continue: 'Continue'
+      continue: 'Continue',
+      needHelp: 'Need Help?',
     },
     verification: {
       verification: 'Verification',

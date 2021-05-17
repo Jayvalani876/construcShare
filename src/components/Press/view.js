@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, Button } from 'react-native';
+import { View, Button, TouchableOpacity } from 'react-native';
 
 import R from 'constants/R';
 
@@ -11,7 +11,8 @@ const Press = (props) => {
     const { 
         title,
         paint,
-        // screens
+        screens,
+        click
         } = props;
 
    return (
@@ -21,7 +22,7 @@ const Press = (props) => {
             title={title}
             color={paint}
             // onPress={() => props.navigation.navigate('screens')}
-            style={styles.but}
+            onPress={click}
         />
         </View>
         </View>

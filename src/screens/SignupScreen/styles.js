@@ -19,7 +19,7 @@ export default StyleSheet.create({
         height: 25,
         marginRight: 31
     },
-    acclog: {
+    accLog: {
         flexDirection: 'row',
         alignSelf: 'flex-end',
         marginRight: 32
@@ -53,28 +53,10 @@ export default StyleSheet.create({
         alignSelf: 'center',
         textAlign: 'center'
     },
-    sign: {
-        fontFamily: R.fonts.sofiaMedium,
-        fontSize: 14,
-        marginHorizontal: 32,
-        color: R.colors.grey,
-        marginTop: 15
+    email: {
+        marginTop: 17,
     },
-    txtimput: {
-        fontFamily: R.fonts.sofiaMedium,
-        fontSize: 14,
-        textAlign: 'left',
-        marginLeft: 32,
-        marginRight: 32,
-        borderColor: R.colors.grey,
-        borderWidth: 1,
-        height: 40,
-        borderRadius: 5,
-        marginTop: 9,
-    },
-    button: {
-        marginHorizontal: 29,
-        marginVertical: 20, 
+    but: {
         marginTop: 31
     },
     rap: {

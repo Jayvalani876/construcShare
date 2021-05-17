@@ -1,16 +1,27 @@
-import React from 'react';
-import {View, Text, Image, TextInput, Button, ProgressBarAndroidComponent} from 'react-native';
+import React, {useState} from 'react';
+import {View, Text, Image, TouchableOpacity} from 'react-native';
 
+///components
+import Input from 'src/components/Input';
+import Press from 'src/components/Press';
+
+///styles
 import styles from './styles';
 
+///constants
 import R from 'constants/R';
 
 const SignupScreen = (props) => {
+
+    const [email, setEmail] = useState("")
+    const [password, setPassword] = useState("")
+
 return (
+
 <View style = {styles.rootView}>
     <View style={styles.containerView}>
         <Image source={R.images.img_logo_large} style = {styles.logo}/>
-        <View style={styles.acclog}>
+        <View style={styles.accLog}>
             <Text style={styles.acc}>{R.strings.signUp.account}</Text>
             <Text 
             style={styles.login} 
@@ -21,47 +32,59 @@ return (
         <Text style={styles.hello}>{R.strings.signUp.hi}</Text>
         <Text style={styles.createAccount}>{R.strings.signUp.createAccount}</Text>
         
-        <Text style={styles.sign}>{R.strings.signUp.email}</Text>
-        <TextInput 
-            placeholder={R.strings.signUp.emailPlaceholder}
-            placeholderTextColor= {R.colors.black}
-            style={styles.txtimput}
+        <Input
+        style= {[styles.input, styles.email]}
+        label = {R.strings.signUp.email}
+        id = "email"
+        placeholder = {R.strings.signUp.emailPlaceholder}
+        onInputChangeHandler = { text => {
+            setEmail(text)
+        }}
         />
 
-        <Text style={styles.sign}>{R.strings.signUp.password}</Text>
-        <TextInput 
-            placeholder={R.strings.signUp.passwordPlaceholder}
-            placeholderTextColor= {R.colors.black}
-            style={styles.txtimput}
+        <Input
+        style= {[styles.input, styles.email]}
+        label = {R.strings.signUp.password}
+        id = "password"
+        placeholder = {R.strings.signUp.passwordPlaceholder}
+        secureTextEntry
+        onInputChangeHandler = { text => {
+            setPassword(text)
+        }}
+        />
+        
+        <Input
+        style= {[styles.input, styles.email]}
+        label = {R.strings.signUp.reEnterPassword}
+        id = "re-password"
+        placeholder = {R.strings.signUp.passwordPlaceholder}
+        secureTextEntry
+        onInputChangeHandler = { text => {
+            setPassword(text)
+        }}
         />
 
-        <Text style={styles.sign}>{R.strings.signUp.reEnterPassword}</Text>
-        <TextInput 
-            placeholder={R.strings.signUp.passwordPlaceholder}
-            placeholderTextColor= {R.colors.black}
-            style={styles.txtimput}
-        />
-        <View style={styles.button}>
-        <Button 
+        <Press 
             title={R.strings.signUp.signUp}
-            color={R.colors.red}
-            onPress={() => props.navigation.navigate('verification')}
+            paint={R.colors.red}
+            style={styles.but}
+            click={() => props.navigation.navigate('verification')}
         />
-        </View>
        
-        <View style={styles.rap}>
+           <View style={styles.rap}>
            <Text style={styles.txt}>{R.strings.signUp.whySignUp}</Text>
            <Image source={R.images.img_login_call} style={styles.img} />
         </View>
         
         <Text style={styles.connect}>{R.strings.signUp.connect}</Text>
-        <View style={styles.but}>
-        <Button 
+        
+        <Press 
             title={R.strings.signUp.works}
-            color={R.colors.black}
-            onPress={() => props.navigation.navigate('work')}
+            paint={R.colors.black}
+            style={styles.but}
+            click = {() => props.navigation.navigate('work')}
         />
-        </View>
+
     </View>
 </View>
 )

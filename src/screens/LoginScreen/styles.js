@@ -32,7 +32,7 @@ export default StyleSheet.create({
         height: 75
     },
     password: {
-        marginTop: 28 
+        marginTop: 20 
     },
     forgetPass: {
         fontFamily: R.fonts.sofiaMedium,
@@ -43,7 +43,10 @@ export default StyleSheet.create({
         marginRight: 32,
     },
     but: {
-        marginTop: 29
+        marginTop: 26,
+        // marginVertical: 33,
+        marginRight: 33,
+        marginLeft: 33
     },
     rap: {
         flexDirection: 'row',
@@ -60,18 +63,7 @@ export default StyleSheet.create({
         fontSize: 14,
         
     },
-    help: {
-        marginTop: 52,
-        alignSelf: 'center',
-        width: 58,
-        height: 58
-    },
-    needHelp: {
-        fontFamily: R.fonts.sofiaMedium,
-        fontSize: 12,
-        textAlign: "center",
-        alignSelf: "center",
-        color: R.colors.black,
-        marginTop: 11
-    },
+    need: {
+        marginTop: 70
+    }
 });

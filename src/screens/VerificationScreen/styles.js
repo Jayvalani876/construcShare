@@ -53,7 +53,7 @@ export default StyleSheet.create({
         alignSelf: "center",
         color: R.colors.grey,
         marginTop: 25,
-        textShadowColor: R.colors.offwhite,
+        textShadowColor: R.colors.offWhite,
         textShadowRadius: 10,
     },
     clickMail: {
@@ -74,7 +74,7 @@ export default StyleSheet.create({
         color: R.colors.black,
         marginTop: 50
     },
-    resendMail:{
+    but:{
         marginTop: 17,
         marginRight: 20,
         marginLeft: 20

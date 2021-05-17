@@ -121,7 +121,7 @@ export default StyleSheet.create({
         fontSize: 15,
         color: R.colors.black
     },
-    sign:{
+    but:{
         marginLeft: 16,
         marginRight: 24,
         marginTop: 20,

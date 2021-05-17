@@ -1,8 +1,13 @@
 import React from 'react';
 import {View, Text, Image, TextInput, Button, ProgressBarAndroidComponent} from 'react-native';
 
+///components
+import Press from 'src/components/Press';
+
+///styles
 import styles from './styles';
 
+///constants
 import R from 'constants/R';
 
 const WorkingScreen = (props) => {
@@ -40,12 +45,12 @@ return (
         </View>
 
         <Text style={styles.paragraph}>{R.strings.work.para}</Text>
-        <View style={styles.sign}>
-        <Button 
-            title={R.strings.work.signUp}
-            color= {R.colors.red}
+
+        <Press 
+            title={R.strings.signUp.signUp}
+            paint={R.colors.red}
+            style={styles.but}
         />
-        </View>
 
     </View>
 </View>

@@ -1,8 +1,15 @@
 import React from 'react';
 import {View, Text, Image, TextInput, Button,} from 'react-native';
 
+///components
+import Input from 'src/components/Input';
+import Press from 'src/components/Press';
+import Help from 'src/components/Help';
+
+///styles
 import styles from './styles';
 
+///constants
 import R from 'constants/R';
 
 const ForgetPasswordScreen = (props) => {
@@ -10,37 +17,37 @@ return (
 <View style = {styles.rootView}>
     <View style={styles.containerView}>
         <Image source={R.images.img_forget_password} style = {styles.logo}/>
-        <Text style={styles.txt_forget}>{R.strings.forgetpass.forget}</Text>
-        <Text style={styles.txt_enterEmail}>{R.strings.forgetpass.enterEmail}</Text>
+        <Text style={styles.txt_forget}>{R.strings.forgetPass.forget}</Text>
+        <Text style={styles.txt_enterEmail}>{R.strings.forgetPass.enterEmail}</Text>
         
-        <Text style={styles.email}>{R.strings.logIn.email}</Text>
-        <View style={styles.selectionstyle}>
-        <Image source={R.images.ic_mail} style = {styles.imgstyle}/>
-        <TextInput 
-            placeholder={R.strings.logIn.emailPlaceholder}
-            placeholderTextColor= {R.colors.black}
-            style={styles.txtimput}
+        <Input
+        style= {[styles.input, styles.email]}
+        image = {R.images.ic_mail}
+        label = {R.strings.logIn.email}
+        id = "email"
+        placeholder = {R.strings.logIn.emailPlaceholder}
+        onInputChangeHandler = { text => {
+            setEmail(text)
+        }}
         />
-        </View>
 
-        <View style={styles.but}>
-        <Button 
-            title= {R.strings.forgetpass.submit}
-            color={R.colors.red}
+        <Press 
+            title={R.strings.forgetPass.submit}
+            paint={R.colors.red}
+            style={[styles.butt, styles.but]}
+            click={() => props.navigation.navigate('resetPass')}
         />
-        </View>
 
         <View style={styles.rap}>
-            <Text style={styles.noaccount}>{R.strings.logIn.noAccount}</Text>
+            <Text style={styles.noAccount}>{R.strings.logIn.noAccount}</Text>
             <Text style={styles.signup}>{R.strings.logIn.signUpHere}</Text>
         </View>
-        <Image source={R.images.ic_help} style = {styles.help}/>
-        <Text 
-            style={styles.needhelp}
-            onPress={() => props.navigation.navigate('resetpass')}
-            >
-                {R.strings.logIn.needHelp}
-        </Text>
+
+         <Help 
+            image ={R.images.ic_help}
+            label = {R.strings.logIn.needHelp}
+            style = {styles.need}
+        />
        
     </View>
 </View>

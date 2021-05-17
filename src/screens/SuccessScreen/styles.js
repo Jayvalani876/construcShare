@@ -7,7 +7,8 @@ import R from 'constants/R';
 export default StyleSheet.create({
     rootView: {
         flex:1,
-        backgroundColor: R.colors.white
+        backgroundColor: R.colors.white,
+        marginTop: 20
     },
     logo: {
         marginTop: 106,
@@ -51,22 +52,11 @@ export default StyleSheet.create({
         alignSelf: 'center',
         textAlign: 'center',
     },
-    help: {
-        marginTop: 20,
-        alignSelf: 'center',
-        width: 58,
-        height: 58
+    need: {
+        marginTop: 30
     },
-    needhelp: {
-        fontFamily: R.fonts.sofiaMedium,
-        fontSize: 12,
-        textAlign: "center",
-        alignSelf: "center",
-        color: R.colors.black,
-        marginTop: 11
-    },
-    continue:{
-        marginTop: 26,
+    but:{
+        marginTop: 46,
         marginLeft: 33,
         marginRight: 33,
     }

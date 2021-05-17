@@ -1,8 +1,15 @@
 import React from 'react';
 import {View, Text, Image, TextInput, Button, ProgressBarAndroidComponent} from 'react-native';
 
+///components
+import Input from 'src/components/Input';
+import Press from 'src/components/Press';
+import Help from 'src/components/Help';
+
+///styles
 import styles from './styles';
 
+///constants
 import R from 'constants/R';
 
 const SuccessScreen = (props) => {
@@ -12,15 +19,19 @@ return (
         <Text style={styles.success}>{R.strings.success.success}</Text>
         <Text style={styles.welcome}>{R.strings.success.welcomeBack}</Text>
         <Text style={styles.email}>{R.strings.success.email}</Text>
-        <Text style={styles.continue}>{R.strings.success.continue}</Text>
-        <Image source={R.images.ic_help} style = {styles.help}/>
-        <Text style={styles.needhelp}>{R.strings.logIn.needHelp}</Text>
-        <View style={styles.continue}>
-        <Button 
-            title={R.strings.success.continue}
-            color={R.colors.red}
+
+        <Help 
+            image ={R.images.ic_help}
+            label = {R.strings.success.needHelp}
+            style = {styles.need}
         />
-        </View>
+
+        <Press 
+            title={R.strings.success.continue}
+            paint={R.colors.red}
+            style={styles.but}
+        />
+        
 </View>
 )
 }

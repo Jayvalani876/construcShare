@@ -4,7 +4,7 @@ import R from 'constants/R';
 
 export default StyleSheet.create({
     container: {
-        flex:1,
+        // flex:1,
     },
     inputContainer: {
         flexDirection: 'row',
@@ -12,12 +12,15 @@ export default StyleSheet.create({
         borderWidth: 1,
         borderRadius: 5,
         marginTop: 10,
-        flex:1
+        // flex:1,
+        marginRight: 30,
+        marginLeft: 30
     },
     label: {
         fontFamily: R.fonts.sofiaMedium,
         fontSize: 14,
         color: R.colors.grey,
+        marginLeft: 25
     },
     img: {
         height: 25,
@@ -30,6 +33,8 @@ export default StyleSheet.create({
         fontFamily: R.fonts.sofiaMedium,
         fontSize: 14,
         textAlign: 'left',
-        flex: 1
+        flex: 1,
+        marginLeft: 10,
+        // marginTop: 5
     }
 });

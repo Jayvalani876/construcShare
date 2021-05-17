@@ -1,8 +1,14 @@
 import React from 'react';
 import {View, Text, Image, TextInput, Button, ProgressBarAndroidComponent} from 'react-native';
 
+///components
+import Input from 'src/components/Input';
+import Press from 'src/components/Press';
+
+///styles
 import styles from './styles';
 
+///constants
 import R from 'constants/R';
 
 const VerificationScreen = (props) => {
@@ -24,12 +30,14 @@ return (
                 {R.strings.verification.clickMail}
         </Text>
         <Text style={styles.findMail}>{R.strings.verification.findMail}</Text>
-        <View style={styles.resendMail}>
-            <Button 
-                title={R.strings.verification.resendMail}
-                color={R.colors.red}
-            />
-        </View>
+
+
+        <Press 
+            title={R.strings.verification.resendMail}
+            paint={R.colors.red}
+            style={styles.but}
+        />
+
     </View>
 )
 }

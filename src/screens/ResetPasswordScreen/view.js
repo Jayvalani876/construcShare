@@ -1,63 +1,74 @@
 import React from 'react';
 import {View, Text, Image, TextInput, Button,} from 'react-native';
 
+///components
+import Input from 'src/components/Input';
+import Press from 'src/components/Press';
+import Help from 'src/components/Help';
+
+///styles
 import styles from './styles';
 
+///constants
 import R from 'constants/R';
 
 const ResetPasswordScreen = (props) => {
 return (
     <View style = {styles.rootView}>
         <Image source={R.images.img_logo_large} style = {styles.logo}/>
-        <Text style={styles.reset}>{R.strings.resetpass.reset}</Text>
+        <Text style={styles.reset}>{R.strings.resetPass.reset}</Text>
 
-        <Text style={styles.email}>{R.strings.resetpass.email}</Text>
-        <View style={styles.selectionstyle}>
-        <Image source={R.images.ic_mail} style = {styles.imgstyle}/>
-        <TextInput 
-            placeholder={R.strings.resetpass.emailPlaceholder}
-            placeholderTextColor= {R.colors.black}
-            style={styles.txtimput}
+        <Input
+        style= {[styles.input, styles.email]}
+        label = {R.strings.resetPass.email}
+        id = "email"
+        placeholder = {R.strings.resetPass.emailPlaceholder}
+        onInputChangeHandler = { text => {
+            setEmail(text)
+        }}
         />
-        </View>
+
+        <Input
+        style= {[styles.input, styles.email]}
+        label = {R.strings.resetPass.password}
+        id = "password"
+        placeholder = {R.strings.resetPass.passwordPlaceholder}
+        secureTextEntry
+        onInputChangeHandler = { text => {
+            setPassword(text)
+        }}
+        />
         
-        <Text style={styles.password}>{R.strings.resetpass.password}</Text>
-        <View style={styles.selectionstyle}>
-        <Image source={R.images.ic_lock} style = {styles.imagestyle}/>
-        <TextInput 
-            placeholder={R.strings.logIn.passwordPlaceholder}
-            placeholderTextColor= {R.colors.black}
-            style={styles.txtimput}
+        <Input
+        style= {[styles.input, styles.email]}
+        label = {R.strings.resetPass.reEnterPassword}
+        id = "re-password"
+        placeholder = {R.strings.resetPass.passwordPlaceholder}
+        secureTextEntry
+        onInputChangeHandler = { text => {
+            setPassword(text)
+        }}
         />
-        </View>
 
-        <Text style={styles.password}>{R.strings.resetpass.reEnterPassword}</Text>
-        <View style={styles.selectionstyle}>
-        <Image source={R.images.ic_lock} style = {styles.imagestyle}/>
-        <TextInput 
-            placeholder={R.strings.resetpass.passwordPlaceholder}
-            placeholderTextColor= {R.colors.black}
-            style={styles.txtimput}
+        <Press 
+            title={R.strings.resetPass.submit}
+            paint={R.colors.red}
+            style={styles.butt}
+            click={() => props.navigation.navigate('success')}
         />
-        </View>
         
-        <View style={styles.butt}>
-            <Button 
-                title={R.strings.resetpass.submit}
-                color={R.colors.red}
-                onPress={() => props.navigation.navigate('success')}
-            />
-        </View>
+        <Press 
+            title={R.strings.resetPass.cancel}
+            paint={R.colors.grey}
+            style={styles.but}
+            click={() => props.navigation.navigate('login')}
+        />
 
-        <View style={styles.but}>
-            <Button 
-                title={R.strings.resetpass.cancle}
-                color={R.colors.grey}
-            />
-        </View>
-
-        <Image source={R.images.ic_help} style = {styles.help}/>
-        <Text style={styles.needhelp}>{R.strings.logIn.needHelp}</Text>
+        <Help 
+            image ={R.images.ic_help}
+            label = {R.strings.resetPass.needHelp}
+            style = {styles.need}
+        />
 
     </View>
 )
