@@ -25,7 +25,7 @@ return (
         <Text style={styles.email}>{R.strings.verification.email}</Text>
         <Text 
             style={styles.clickMail}
-            onPress={() => props.navigation.navigate('')}
+            onPress={() => props.navigation.navigate('uen')}
             >
                 {R.strings.verification.clickMail}
         </Text>

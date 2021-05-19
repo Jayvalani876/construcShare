@@ -9,6 +9,7 @@ import ForgetPasswordScreen from 'src/screens/ForgetPasswordScreen';
 import ResetPasswordScreen from 'src/screens/ResetPasswordScreen';
 import SuccessScreen from 'src/screens/SuccessScreen';
 import VerificationScreen from 'src/screens/VerificationScreen';
+import UENScreen from 'src/screens/UENScreen';
 
 const Stack = createStackNavigator();
 
@@ -49,6 +50,11 @@ export const PreLoginStackNavigator = () => {
             <Stack.Screen 
             name="verification" 
             component={VerificationScreen} 
+            options={{headerShown: false}}
+            />
+            <Stack.Screen 
+            name="uen" 
+            component={UENScreen} 
             options={{headerShown: false}}
             />
         </Stack.Navigator>

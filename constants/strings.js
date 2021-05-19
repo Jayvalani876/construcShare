@@ -86,6 +86,24 @@ const strings = {
       findMail: 'Still can’t find the Email?',
       resendMail: 'Resend Email'
     },
+    uen:{
+      step: 'One more step',
+      bitMore: 'A bit more!',
+      signUp: 'Sign Up',
+      profileSetup: 'Profile Setup',
+      getStarted: 'Get Started',
+      access: 'For Full Access Please Use:',
+      uen: 'UEN*',
+      companyName: 'Company Name*',
+      content: '2 users have been registered to this UEN. Maximum of 3 users can be registered to any particular UEN for free',
+      check1: 'Are you Authorised to Participate on this platform for the said concern?',
+      check2: 'I Agree with Terms & Conditions',
+      submit: 'Submit',
+      freeLancer: 'Freelancers?',
+      click: 'Click Here',
+      emailPlaceholder: " ",
+      xyz: "XYZ Pte Ltd",
+    },
   };
   
   export default strings;

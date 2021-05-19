@@ -7,7 +7,8 @@ const colors = {
     brown: '#80000B',
     lightgrey: "#DDDDDD",
     darkgrey: "#00000029",
-    offWhite: "#00000019"
+    offWhite: "#00000019",
+    offGrey: "#CECACA"
   };
   
   export default colors;

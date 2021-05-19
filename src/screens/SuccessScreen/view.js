@@ -2,7 +2,6 @@ import React from 'react';
 import {View, Text, Image, TextInput, Button, ProgressBarAndroidComponent} from 'react-native';
 
 ///components
-import Input from 'src/components/Input';
 import Press from 'src/components/Press';
 import Help from 'src/components/Help';
 
