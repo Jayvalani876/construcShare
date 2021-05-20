@@ -96,6 +96,7 @@ return (
             title={R.strings.uen.click}
             paint={R.colors.red}
             style={[styles.butt, styles.but]}
+            click={() => props.navigation.navigate('freelancer')}
         />
     </View>
 </View>

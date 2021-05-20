@@ -10,6 +10,7 @@ import ResetPasswordScreen from 'src/screens/ResetPasswordScreen';
 import SuccessScreen from 'src/screens/SuccessScreen';
 import VerificationScreen from 'src/screens/VerificationScreen';
 import UENScreen from 'src/screens/UENScreen';
+import FreelancerScreen from 'src/screens/FreelancerScreen';
 
 const Stack = createStackNavigator();
 
@@ -27,36 +28,41 @@ export const PreLoginStackNavigator = () => {
             component={SignupScreen} 
             options={{headerShown: false}}
             />
-            <Stack.Screen 
+          <Stack.Screen 
             name="work" 
             component={WorkingScreen} 
             options={{headerShown: false}}
-            />
-            <Stack.Screen 
+          />
+          <Stack.Screen 
             name="forgetPass" 
             component={ForgetPasswordScreen} 
             options={{headerShown: false}}
-            />
-            <Stack.Screen 
+          />
+          <Stack.Screen 
             name="resetPass" 
             component={ResetPasswordScreen} 
             options={{headerShown: false}}
-            />
-            <Stack.Screen 
+          />
+          <Stack.Screen 
             name="success" 
             component={SuccessScreen} 
             options={{headerShown: false}}
-            />
-            <Stack.Screen 
+          />
+          <Stack.Screen 
             name="verification" 
             component={VerificationScreen} 
             options={{headerShown: false}}
-            />
-            <Stack.Screen 
+          />
+          <Stack.Screen 
             name="uen" 
             component={UENScreen} 
             options={{headerShown: false}}
-            />
+          />
+          <Stack.Screen 
+            name="freelancer" 
+            component={FreelancerScreen} 
+            options={{headerShown: false}}
+          />
         </Stack.Navigator>
     );
   };

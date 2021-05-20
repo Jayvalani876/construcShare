@@ -10,14 +10,13 @@ const images = {
     img_forget_password: require('../assets/img/img_forget_password.png'),  
     img_success: require('../assets/img/img_success.png'),  
     img_girl: require('../assets/img/img_girl.png'),
-    
     img_empty_tick: require('../assets/img/img_empty_tick.png'),
     img_red_dash: require('../assets/img/img_red_dash.png'),
     img_right_tick: require('../assets/img/img_right_tick.png'),
     img_white_dash: require('../assets/img/img_white_dash.png'),
     img_white_tick: require('../assets/img/img_white_tick.png'),
+    img_background1: require('../assets/img/img_background1.png'),
 
-    
   }
   
   export default images;

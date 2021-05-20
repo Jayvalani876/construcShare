@@ -106,8 +106,8 @@ export default StyleSheet.create({
     but: {
         marginTop: 20,
         // marginVertical: 33,
-        marginRight: 26,
-        marginLeft: 14
+        marginRight: 33,
+        marginLeft: 33
     },
     free:{
         flex: 1,
