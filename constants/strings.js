@@ -104,6 +104,13 @@ const strings = {
       emailPlaceholder: " ",
       xyz: "XYZ Pte Ltd",
     },
+    freeLancer: {
+      nonUen: 'As a Non-UEN User',
+      content: 'You will ONLY be allowed to post in Professional Services as a SUBSCRIBED User',
+      registeredUen: 'UEN Registered Users Post for Free!',
+      subscribe: 'Subscribe',
+      back: 'Back'
+    }
   };
   
   export default strings;
