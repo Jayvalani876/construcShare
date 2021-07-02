@@ -36,13 +36,13 @@ return (
             title={R.strings.freeLancer.subscribe}
             paint={R.colors.red}
             style={[styles.butt, styles.but]}
-            click={() => props.navigation.navigate('')} 
+            click={() => props.navigation.navigate('subscriptionRate')} 
         />
         <Press
             title={R.strings.freeLancer.back}
             paint={R.colors.black}
             style={[styles.butt, styles.button]}
-            click={() => props.navigation.navigate('')} 
+            click={() => props.navigation.navigate('uen')} 
         />
         <View style={{marginBottom: 20}}></View>
     </BottomSheet>

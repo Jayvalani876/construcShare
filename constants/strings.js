@@ -110,7 +110,17 @@ const strings = {
       registeredUen: 'UEN Registered Users Post for Free!',
       subscribe: 'Subscribe',
       back: 'Back'
-    }
+    },
+    subscriptionRate: {
+      subscriptionRates: 'Subscription Rates',
+      professionalServices: 'For Professional Services',
+      content: 'All Professional Services Postsare limited to 1 Post per Service. Terms and Conditions Apply',
+      learnMore: 'Learn More',
+      freeTrial: 'Free Trial',
+    },
+    subscriptionTerms: {
+      SubscriptionTerms: 'Subscription Rates'
+    }  
   };
   
   export default strings;

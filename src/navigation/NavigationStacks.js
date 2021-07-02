@@ -11,9 +11,11 @@ import SuccessScreen from 'src/screens/SuccessScreen';
 import VerificationScreen from 'src/screens/VerificationScreen';
 import UENScreen from 'src/screens/UENScreen';
 import FreelancerScreen from 'src/screens/FreelancerScreen';
+import SubscriptionRateScreen from 'src/screens/SubscriptionRateScreen';
+import SubscriptionTerms from 'src/screens/SubscriptionTerms';
+
 
 const Stack = createStackNavigator();
-
 
 export const PreLoginStackNavigator = () => {
     return (
@@ -61,6 +63,16 @@ export const PreLoginStackNavigator = () => {
           <Stack.Screen 
             name="freelancer" 
             component={FreelancerScreen} 
+            options={{headerShown: false}}
+          />
+          <Stack.Screen 
+            name="subscriptionRate" 
+            component={SubscriptionRateScreen} 
+            options={{headerShown: false}}
+          />
+          <Stack.Screen 
+            name="subscriptionTerms" 
+            component={SubscriptionTerms} 
             options={{headerShown: false}}
           />
         </Stack.Navigator>

@@ -1,4 +1,4 @@
-import {StyleSheet} from "react-native";
+import { StyleSheet } from "react-native";
 
 
 import R from 'constants/R';
@@ -6,11 +6,11 @@ import R from 'constants/R';
 
 export default StyleSheet.create({
     rootView: {
-        flex:1,
+        flex: 1,
         backgroundColor: R.colors.white
     },
     containerView: {
-        flex:1,
+        flex: 1,
         marginTop: 113,
     },
     logo: {
@@ -29,10 +29,10 @@ export default StyleSheet.create({
     input: {
         width: "93%",
         alignSelf: "center",
-        height: 75
+        height: 75,
     },
     password: {
-        marginTop: 20 
+        marginTop: 20
     },
     forgetPass: {
         fontFamily: R.fonts.sofiaMedium,
@@ -61,7 +61,7 @@ export default StyleSheet.create({
         color: R.colors.red,
         fontFamily: R.fonts.sofiaMedium,
         fontSize: 14,
-        
+
     },
     need: {
         marginTop: 70
